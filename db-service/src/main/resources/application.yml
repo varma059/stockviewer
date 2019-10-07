@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: db-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: kingkong
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      generate-ddl: true
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    service-url:
+      defaultZone: http://localhost:8083/eureka
+  instance:
+    hostname: localhost
+server:
+  port: 8081
+
